@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>双人贪吃蛇</title>
+    <link rel="stylesheet" type="text/css" href="css/snake.css"/>
+</head>
+<body>
+	<div class="main">
+		<div class="game_box">
+			<h1 class="title">
+				<span class="word">双</span>
+				<span class="word">人</span>
+				<span class="word">贪</span>
+				<span class="word">吃</span>
+				<span class="word">蛇</span>
+				<span class="word">小</span>
+				<span class="word">游</span>
+				<span class="word">戏</span>
+			</h1>
+			
+			<!--游戏盒子-->
+		    <div class="map" id="map"></div>
+		    <!--游戏盒子_end-->
+		    
+		    <div class="info" id="info">
+		    	<p class="firstline">网上看到过挺有意思的纯javaScript开发的贪吃蛇小游戏</p>
+		    	<p>一时兴起想要开发一个可以双人玩的贪吃蛇</p>
+		    	<p>重构并优化了代码，增加了双人模式交互情景</p>
+		    	<p>体验单人模式请点击：<a href="https://angelrist.github.io/Simple-GluttonousSnake/" target="_blank">单人贪吃蛇</a></p>
+		    	<button class="back" id="back">返回</button>
+		    </div>
+		    <button class="btn" id="begin">开始游戏</button>
+		    <button class="btn" id="pause">暂停游戏</button>
+		    <button class="btn" id="restart">重新开局</button>
+		    <button class="btn" id="clickme">点我了解</button>
+		</div>
+	    <div>
+	    	<ul>
+	    		<li><p>游戏说明：</p></li>
+	    		<li>1、左边的蛇由W、S、A、D控制上下左右方向，右边的蛇由↑、↓、←、→控制上下左右方向</li>
+	    		<li>2、盒子范围内会随机出现两个果实，蛇吃下后身体增加一个单位，果实立即刷新</li>
+	    		<li>3、两蛇头部相撞，则为平局 ，分别回到初始地点重新出发</li>
+	    		<li>4、若己方蛇头撞到另一方蛇的身体，则己方身亡</li>
+	    		<li>5、蛇头撞墙、蛇头撞到自身，则该蛇身亡</li>
+	    	</ul>
+	    </div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/snake.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
